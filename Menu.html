@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Corner Cafe - Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background-color:#7C3AED;
+        }
+
+        h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        /* Card Styling */
+        .menu-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .menu-item img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .menu-item .menu-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 16px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .menu-item:hover .menu-info {
+            opacity: 1;
+        }
+
+        .menu-item .menu-info h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .menu-item .menu-info p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #7C3AED;
+            padding: 2rem 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        footer a {
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #F2A900;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .menu-item {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="py-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-white text-3xl font-bold">Ash's Cafe</h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg text-white">
+                    <li><a href="home.html" class="hover:text-yellow-400">Home</a></li>
+                    <li><a href="menu.html" class="hover:text-yellow-400">Menu</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Featured Menu Section -->
+    <main class="container mx-auto px-4 py-12">
+        <section id="featured-menu">
+            <h2 class="text-4xl font-semibold text-indigo-800 text-center mb-12 font-bold " style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-decoration: underline;   " >Our Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+                <!-- Menu Item 1 -->
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/9d/bf/b2/9dbfb20e379e688280b56b555cecdc00.jpg" alt="Fluffy Chocolate Pancakes">
+                    <div class="menu-info">
+                        <h3>Fluffy Chocolate Pancakes</h3>
+                        <p>Start your day with our delicious pancakes topped with Chocolate syrup.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fENvZmZlZXxlbnwwfHwwfHx8MA%3D%3D" alt="Signature Coffee">
+                    <div class="menu-info">
+                        <h3>Signature Coffee</h3>
+                        <p>Experience the rich aroma and flavor of our freshly brewed coffee.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1603903631889-b5f3ba4d5b9b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fEdyaWxsZWQlMjBTYW5kd2ljaHxlbnwwfHwwfHx8MA%3D%3D" alt="Grilled Sandwich">
+                    <div class="menu-info">
+                        <h3>Grilled Sandwich</h3>
+                        <p>Enjoy a hearty grilled sandwich made with the freshest ingredients.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 4 -->
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww" alt="Signature Burger">
+                    <div class="menu-info">
+                        <h3>Signature Burger</h3>
+                        <p>Experience the rich taste of our signature burger, grilled to perfection.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 5 -->
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1571066811602-716837d681de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emF8ZW58MHx8MHx8fDA%3D" alt="Pizza">
+                    <div class="menu-info">
+                        <h3>Pizza</h3>
+                        <p>Experience the rich taste of our artisanal pizza.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 6 -->
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1627286400579-027de47e9e73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNwYWdoZXR0aXxlbnwwfHwwfHx8MA%3D%3D" alt="Spaghetti">
+                    <div class="menu-info">
+                        <h3>Spaghetti</h3>
+                        <p>Experience the rich taste of our classic spaghetti.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 7 -->
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/cc/62/1e/cc621e25c58ca48d489aa0505358c7bc.jpg" alt="Croissant">
+                    <div class="menu-info">
+                        <h3>Croissant</h3>
+                        <p>Buttery, flaky croissants baked to perfection.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 8 -->
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/82/67/86/826786b6918be7c6605a8729280993af.jpg" alt="Herbal Tea">
+                    <div class="menu-info">
+                        <h3>Herbal Tea</h3>
+                        <p>Soothing herbal tea to relax and unwind.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 9 -->
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/a9/9d/54/a99d5422696a747b682202dc4e2551f5.jpg" alt="Blueberry Muffin">
+                    <div class="menu-info">
+                        <h3>Blueberry Cake</h3>
+                        <p>Blubarry Cake: A Pinch of Perfection, A Dash of Delight, Baked to Culinary Excellence.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 10 -->
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/f8/7d/d4/f87dd4085eef72c65bee86aa36bf0264.jpg" alt="French Chocolate Pots">
+                    <div class="menu-info">
+                        <h3>French Chocolate Pots</h3>
+                        <p>A spoonful of elegance, a taste of Paris – indulge in the luxurious richness of French Chocolate Pots.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 11 -->
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/16/e7/98/16e7985261c745c9969d7e06d1d7622d.jpg" alt="M&M's Ferrero Oreo Roll Cake">
+                    <div class="menu-info">
+                        <h3>M&M's Ferrero Oreo Roll Cake</h3>
+                        <p>Indulge in a symphony of sweetness with our M&M's Ferrero Oreo Roll Cake – where creamy decadence meets a crunchy chocolate dream.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Item 12 -->
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/7b/89/49/7b8949733aee6db14f22360f435487d6.jpg" alt="Lasagna">
+                    <div class="menu-info">
+                        <h3>Lasagna</h3>
+                        <p>Layers of Comfort, Rich with Flavor – Our Lasagna is a Taste of Tradition, Crafted to Perfection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container mx-auto text-center">
+            <p class="text-white">&copy; 2025 Ash's Cafe. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="hover:text-yellow-400">Facebook</a>
+                <a href="https://www.instagram.com/neonvorte_27?igsh=aThxbTU0YnR0ZG90" class="hover:text-yellow-400">Instagram</a>
+                <a href="#" class="hover:text-yellow-400">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
