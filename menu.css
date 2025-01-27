@@ -1,0 +1,92 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #7C3AED;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Card Styling */
+.menu-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover img {
+    transform: scale(1.1);
+}
+
+.menu-item .menu-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-item:hover .menu-info {
+    opacity: 1;
+}
+
+.menu-item .menu-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.menu-item .menu-info p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #7C3AED;
+    padding: 2rem 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F2A900;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-item {
+        margin-bottom: 20px;
+    }
+}
