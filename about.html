@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,63 +9,105 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        body { font-family: 'Poppins', sans-serif; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bg-gradient {
+            background: linear-gradient(90deg, #7C3AED, #4C51BF);
+        }
     </style>
 </head>
+
 <body class="bg-gray-100 text-gray-900">
-    <!-- Header (similar to main page) -->
+
+    <!-- Header -->
     <header class="fixed w-full z-50 bg-gradient text-white py-4 shadow-lg">
-        <!-- Add similar header from main page -->
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">Ash's Cafe</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="home.html" class="hover:text-yellow-300">Home</a></li>
+                    <li><a href="menu.html" class="hover:text-yellow-300">Menu</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- About Section -->
-    <section class="pt-24 pb-16 container mx-auto px-4">
+    <section class="pt-32 pb-16 container mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
                 <h1 class="text-4xl font-bold text-indigo-800">Our Journey</h1>
                 <p class="text-gray-700 leading-relaxed">
-                    Founded in 2012, Ash's Cafe began as a small passion project with a simple dream: to create a warm, welcoming space where community and cuisine intersect. What started as a modest coffee corner has grown into a beloved local destination.
+                    Founded in 2012, Ash's Cafe began as a small passion project with a simple dream: to create a warm, welcoming space where community and cuisine intersect. From a humble coffee corner, we've grown into a beloved destination for friends, families, and food enthusiasts alike.
                 </p>
                 <p class="text-gray-700 leading-relaxed">
-                    Our commitment remains unchanged: sourcing the finest ingredients, brewing exceptional coffee, and creating an environment that feels like a second home to our patrons.
+                    Our commitment has always been to source the finest ingredients, brew exceptional coffee, and create an environment that feels like a second home. Over the years, we've become known for our unique blend of flavors, creativity, and hospitality.
                 </p>
-                <div class="flex space-x-4">
-                    <div class="bg-indigo-100 p-6 rounded-lg text-center">
+                <div class="flex space-x-6">
+                    <div class="bg-indigo-100 p-6 rounded-lg text-center shadow-lg">
                         <h3 class="text-3xl font-bold text-indigo-700">10+</h3>
-                        <p class="text-gray-600">Years of Experience</p>
+                        <p class="text-gray-600">Years of Excellence</p>
                     </div>
-                    <div class="bg-indigo-100 p-6 rounded-lg text-center">
+                    <div class="bg-indigo-100 p-6 rounded-lg text-center shadow-lg">
                         <h3 class="text-3xl font-bold text-indigo-700">5000+</h3>
-                        <p class="text-gray-600">Happy Customers</p>
+                        <p class="text-gray-600">Satisfied Customers</p>
                     </div>
                 </div>
             </div>
             <div>
-                <img src="https://images.unsplash.com/photo-1556761175-4b46a3fb44de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                     alt="Cafe Founders" class="rounded-lg shadow-xl">
+                <img src="founder.jpg" alt="Cafe Founders"
+                    class="rounded-lg shadow-xl w-full max-h-110 object-cover">
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
     <section class="bg-white py-16">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 text-indigo-800">Meet Our Team</h2>
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-12">
+                <!-- Team Member 1 -->
                 <div class="text-center">
-                    <img src="https://images.unsplash.com/photo-1531891437562-4c2a5a638c83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
-                         alt="Team Member" class="w-48 h-48 object-cover rounded-full mx-auto mb-4">
+                    <img src="https://i.pinimg.com/736x/3a/f3/67/3af367cc63385b92330354f8f2ee4a67.jpg"
+                        alt="Ash Thompson" class="w-48 h-48 object-cover rounded-full mx-auto mb-4 shadow-lg">
                     <h3 class="text-xl font-semibold">Ash Thompson</h3>
-                    <p class="text-gray-600">Founder & Head Chef</p>
+                    <p class="text-gray-600">Head Chef</p>
                 </div>
-                <!-- Add more team members similarly -->
+                <!-- Team Member 2 -->
+                <div class="text-center">
+                    <img src="employee.jpg"
+                        alt="Jane Smith" class="w-48 h-48 object-cover rounded-full mx-auto mb-4 shadow-lg">
+                    <h3 class="text-xl font-semibold">Jane Smith</h3>
+                    <p class="text-gray-600">Pastry Specialist</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="text-center">
+                    <img src="employee2.jpg"
+                        alt="John Doe" class="w-48 h-48 object-cover rounded-full mx-auto mb-4 shadow-lg">
+                    <h3 class="text-xl font-semibold">Erica Doe</h3>
+                    <p class="text-gray-600">Barista Extraordinaire</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (similar to main page) -->
+    <!-- Footer -->
     <footer class="bg-gradient text-white py-8">
-        <!-- Add similar footer from main page -->
+        <div class="container mx-auto text-center">
+            <p class="text-lg">&copy; 2025 Ash's Cafe. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="hover:text-yellow-300">Facebook</a>
+                <a href="https://www.instagram.com/neonvorte_27" class="hover:text-yellow-300">Instagram</a>
+                <a href="#" class="hover:text-yellow-300">Twitter</a>
+            </div>
+        </div>
     </footer>
+
 </body>
+
 </html>
